@@ -2,14 +2,14 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 gem 'rails', '4.2.4'
-gem 'pg'
+gem 'pg', 	 '0.18.4'
 group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
 
 group :development do
   # Use postgres as the database for Active Record
-  gem 'pg'
+  #gem 'pg'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'byebug'
@@ -17,7 +17,7 @@ end
 
 group :production do
   # Use postgres as the database for Active Record
-  gem 'pg'
+  #gem 'pg'
   gem 'rails_12factor'
   #gem 'passenger'
 end

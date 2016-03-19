@@ -181,7 +181,7 @@ DEPENDENCIES
   oj
   oj_mimic_json
   passenger
-  pg
+  pg (= 0.18.4)
   rails (= 4.2.4)
   rails_12factor
   redis
