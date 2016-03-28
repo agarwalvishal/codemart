@@ -18,8 +18,8 @@ end
 group :production do
   # Use postgres as the database for Active Record
   #gem 'pg'
-  gem 'rails_12factor'
-  #gem 'passenger'
+  #gem 'rails_12factor'
+  gem 'passenger'
 end
 
 # For cross-process synchronization

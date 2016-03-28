@@ -62,7 +62,6 @@ class AuctionsController < ApplicationController
 
         new_bid = Bid.new(auction: auction, user: current_user, amount: auction.buy_it_now_price)
         new_bid.save
-
         new_bid.auction.update(winning_bid: new_bid, end_time: Time.now, active: false)
 
         # Deduct coins from balance

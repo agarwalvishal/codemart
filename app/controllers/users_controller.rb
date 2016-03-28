@@ -28,7 +28,7 @@ class UsersController < ApplicationController
     @user.username.downcase!
     @user.email.downcase!
     #adding balance
-    @user.balance = 0
+    @user.balance = 100
 
     if @user.save
       redirect_to login_path, notice: 'Successfully registered. You can log in now.'
